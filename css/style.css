@@ -1,0 +1,268 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+html{height: 100%}
+body{
+	width: 100%;
+	height: 100%;
+	color: #333;
+	font-family: "Times New Roman", Arial, sans-serif;
+	font-size: 1em;
+	line-height: 135%;
+	float: left;
+	background-color: black;
+}
+
+img{
+	float: center;
+	max-width: 100%;
+	height: auto;
+	width: auto\9;
+}
+
+a{
+	color: white;
+	text-decoration: none; 
+}
+a:hover{
+	color: black;
+}
+a,a:hover{
+	-webkit-transition:all, 3s ease;
+	-moz-transition:all, 3s ease;
+	-o-transition:all, 3s ease;
+	-ms-transition:all, 3s ease;
+	transition:all, 3s ease;
+}
+.clear{
+	clear: both;
+}
+
+header{
+	width: 100%;
+	float: left;
+	background-color: black; 
+	border-bottom: 1px solid white; 
+	
+}
+header #logo{
+	width: 100%;
+	float: left;
+}
+
+header #logo span{
+	font-size: 5em;
+	font-family: Times New Roman, sans-serif;
+	padding: 3%;
+	float: left;
+	margin-left: 39.5%;
+	color: white;
+	padding-top: 2%;	
+}
+
+body{
+	background-color: black;
+	text-align: center;
+}
+
+/* nav */
+.nav {
+	position: relative;
+	margin: 20px 0;
+}
+.nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+.nav li {
+	margin: 0 5px 10px 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+}
+.nav li p{
+	color: black;
+}
+.nav a {
+	padding: 3px 12px;
+	text-decoration: none;
+	color: #999;
+	line-height: 100%;
+}
+.nav a:hover {
+	color: #000;
+	background-color: white;
+}
+.nav .current a {
+	background: #999;
+	color: black;
+	border-radius: 5px;
+}
+.nav.right ul {
+	text-align: right;
+}
+/* центральный nav */
+
+.nav.center ul {
+	text-align: center;
+	color: black;
+}
+
+/*страницы св*/
+#wrapp #table{
+	width: 70%;
+	float: left;
+	margin-left: 15%;
+	background-color: white;
+	top:2%;
+} 
+#wrapp #table .photoImage img{
+	width: 450px;
+	height: 450px;
+	float: left;
+	padding: 1%;
+
+}
+#wrapp #table .AbInfo{
+	width: 45%;
+	float: right;
+	margin-right: 2%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	background-color: grey;
+}
+#wrapp #table .AbInfo h2{
+	text-align: center;
+	font-size: 1.5em;
+	padding: 2%;
+}
+#wrapp #table .AbInfo p{
+	font-size: 1.2em;
+	padding: 2%;
+}
+#wrapper{
+	width: 96%;
+	padding: 2%;
+}
+#wrapper.image{
+	width: 30%;
+	margin-left: 2%;
+}
+#wrapper.image img{
+	width: 450px;
+	height: 450px;
+
+}
+
+@media screen and (max-width: 600px) {
+header #logo span{
+	font-size: 3.5em;
+	font-family: Times New Roman, sans-serif;
+	float: left;
+	margin-left: 30%;
+	color: white;
+	padding-top: 7%;	
+}
+
+
+.nav {
+position: relative;
+min-height: 20px;
+}
+.nav ul {
+width: 80px;
+padding: 3px 0;
+position: absolute;
+top: 0;
+left: 0;
+border: solid 1px #aaa;
+background: #fff url(images/icon-menu.png) no-repeat 10px 11px;
+border-radius: 5px;
+box-shadow: 0 1px 2px rgba(0,0,0,.3);
+}
+.nav li {
+display: none; /* скройте все элементы &lt;li&gt; */
+margin: 0;
+}
+.nav .current {
+display: block; /* показывайте только текущий элемент &lt;li&gt; */
+}
+.nav a {
+display: block;
+text-align: center;
+}
+.nav .current a {
+background: none;
+color: #666;
+}
+/* при проведении мышью */
+.nav ul:hover {
+background-image: none;
+}
+.nav ul:hover li {
+display: block;
+margin: 0 0 2px;
+}
+.nav ul:hover .current {
+background: url(images/icon-check.png) no-repeat 10px 7px;
+}
+/* по правой стороне */
+.nav.right ul {
+left: auto;
+right: 0;
+}
+/*по центру */
+.nav.center ul {
+left: 50%;
+margin-left: -90px;
+}
+#wrapp #table{
+	width: 70%;
+	float: left;
+	margin-left: 15%;
+	background-color: white;
+	top:2%;
+} 
+#wrapp #table .photoImage img{
+	width: 98%;
+	height: 350px;
+	float: center;
+	padding: 1%;
+
+}
+#wrapp #table .AbInfo{
+	width: 96%;
+	float: right;
+	margin-right: 2%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	background-color: grey;
+}
+#wrapp #table .AbInfo h2{
+	text-align: center;
+	font-size: 1.5em;
+	padding: 2%;
+}
+#wrapp #table .AbInfo p{
+	font-size: 1.2em;
+	padding: 2%;
+}
+#wrapper{
+	width: 96%;
+	padding: 2%;
+}
+#wrapper.image{
+	width: 30%;
+	margin-left: 2%;
+}
+#wrapper.image img{
+	width: 450px;
+	height: 450px;
+
+}
+}
